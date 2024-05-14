@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Árvore Genealógicas</title>
+        <title>Raízes Operacinais</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -22,22 +22,18 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Árvore Genealógicas</a>
+                <a class="navbar-brand fw-bold" href="#page-top">Árvore Genealógica</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Linux</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Windows</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Árvores</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Sistemas Operacionais</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Sobre</a></li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
-                        </span>
-                    </button>
+                    
                 </div>
             </div>
         </nav>
@@ -48,14 +44,14 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Árvore Genealógicas.</h1>
-                            <p class="lead fw-normal text-muted mb-5">Àrvore Genealógicas de dois sistemas operacionais contendo desde o inicio de sua versão ate a final</p>
+                            <h1 class="display-1 lh-1 mb-3">Hierarquia dos Sistemas Operacionais</h1>
+                            <p class="lead fw-normal text-muted mb-5">Descubra a história por trás do código: explorando a evolução dos sistemas operacionais.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <!-- Masthead device mockup feature-->
                         <div class="masthead-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="z-index: 1;">
                                 <defs>
                                     <linearGradient id="circleGradient" gradientTransform="rotate(45)">
                                         <stop class="gradient-start-color" offset="0%"></stop>
@@ -68,16 +64,8 @@
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
                             ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
                             <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
-                                    </div>
-                                </div>
-                            </div>
+                                <img src="assets/img/png-transparent-linux-ve-windows-un-karşılaştırılması-computer-servers-operating-systems-linux (1)-Photoroom.png-Photoroom.png" alt="logo-linux" width="400px">
+                               </div>
                         </div>
                     </div>
                 </div>
@@ -99,10 +87,10 @@
             <div class="tree">
                 <ul>
                     <li>
-                        <a href="#">Parent</a>
+                        <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover" title="Unix" data-bs-content="O Unix, desenvolvido na Bell Labs por Ken Thompson e Dennis Ritchie, surgiu como uma continuação do projeto Multics na década de 60. Com uma interface de linha de comando e sistema de arquivos hierárquico, a primeira versão foi lançada em 1971, contendo 60 comandos distintos, sendo um sistema operacional multi-tarefa e multi-usuario.">Unix</button></a> 
                         <ul>
                             <li>
-                                <a href="#">Child</a>
+                                <a href="#"><button href="#">Child</button></a>
                                 <ul>
                                     <li>
                                         <a href="#">Grand Child</a>
@@ -248,9 +236,12 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+        
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
