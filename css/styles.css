@@ -7912,7 +7912,8 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+  font-size: calc(1.375rem + 1.0vw) !important;
+  text-align: justify;
 }
 
 .fs-2 {
@@ -8092,6 +8093,7 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
+  text-align: justify;
 }
 
 .text-black-50 {
@@ -10834,7 +10836,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background: linear-gradient(45deg, #1CD8B3, #049BEA) !important;
 }
 
 .font-alt {
@@ -10992,7 +10994,7 @@ section.cta:before {
   height: 1rem;
   width: 1rem;
   transform: rotate(10deg);
-  fill: #2937f0;
+  fill: #049BEA;
   top: 15%;
   right: 10%;
 }
@@ -11000,7 +11002,7 @@ section.cta:before {
   position: absolute;
   height: 0.75rem;
   width: 0.75rem;
-  fill: #2937f0;
+  fill: #049BEA;
   bottom: 15%;
   left: 10%;
 }
@@ -11162,4 +11164,11 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+.content-tree {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
 }

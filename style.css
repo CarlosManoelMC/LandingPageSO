@@ -171,8 +171,7 @@ right connector from last child*/
 }
 
 .tree li button{
-	background:linear-gradient(45deg, #2937f0, #9f1ae2);
-	border-image: linear-gradient(to bottom, #2937f0, #9f1ae2);
+	background:linear-gradient(45deg, #1CD8B3, #049BEA);
 	padding: 10px 60px;
 	text-decoration: none;
 	color: #FFFFFF;
@@ -190,7 +189,7 @@ right connector from last child*/
 }
 
 .tree li button:hover, .tree li button:hover+ul li button {
-	background: linear-gradient(45deg, #9f1ae2 , #2937f0); color: #FFFFFF; border: 1px solid linear-gradient(to bottom, #9f1ae2, #9f1ae2);;
+	background: linear-gradient(45deg,  #049BEA, #1CD8B3); color: #FFFFFF; border: 1px solid linear-gradient(to bottom, #9f1ae2, #9f1ae2);;
 }
 /*Connector styles on hover*/
 .tree li a:hover+ul li::after, 
@@ -198,6 +197,11 @@ right connector from last child*/
 .tree li a:hover+ul::before, 
 .tree li a:hover+ul ul::before{
 	border-color:  black;
+}
+
+.popover.popover-body {
+    background-color: #f8f9fa; /* Cor de fundo */
+    color: rgb(231, 7, 160); /* Cor do texto */
 }
 
 /*Thats all. I hope you enjoyed it.
