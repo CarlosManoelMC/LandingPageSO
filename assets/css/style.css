@@ -10948,7 +10948,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("../assets/img/win95.png");
+  background-image: url("../img/win95.png");
   background-position: center;
   background-size: cover;
 }
