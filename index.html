@@ -1,268 +1,531 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Raízes Operacinais</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Árvore Genealógica</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Sistemas Operacionais</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Árvores</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Posix</a></li>
-                    </ul>
-                    
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Raízes Operacionais</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="#page-top">Árvore Genealógica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#operatingSystem">Sistemas Operacionais</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Árvores</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#posix">Posix</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#treeSecond">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#win95">Windows 95</a></li>
+                </ul>
+
             </div>
-        </nav>
-        <!-- Mashead header-->
-        <header class="masthead">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Hierarquia dos Sistemas Operacionais</h1>
-                            <p class="lead fw-normal text-muted mb-5">Descubra a história por trás do código: explorando a evolução dos sistemas operacionais.</p>
+        </div>
+    </nav>
+    <!-- Mashead header-->
+    <header class="masthead">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <!-- Mashead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-1 lh-1 mb-3">Hierarquia dos Sistemas Operacionais</h1>
+                        <p class="lead fw-normal text-muted mb-5">Descubra a história por trás do código: explorando a
+                            evolução dos sistemas operacionais.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Masthead device mockup feature-->
+                    <div class="masthead-device-mockup">
+                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                            style="z-index: 1;">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03"
+                                transform="translate(120.42 -49.88) rotate(45)" fill="#049BEA"></rect>
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03"
+                                transform="translate(-49.88 120.42) rotate(-45)" fill="#049BEA"></rect>
+                        </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" fill="#049BEA"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <img src="assets/img/png-transparent-linux-ve-windows-un-karşılaştırılması-computer-servers-operating-systems-linux (1)-Photoroom.png-Photoroom.png"
+                                alt="logo-linux" width="400px">
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
-                        <div class="masthead-device-mockup">
-                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="z-index: 1;">
-                                <defs>
-                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                        <stop class="gradient-start-color" offset="0%"></stop>
-                                        <stop class="gradient-end-color" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)" fill="#049BEA"></rect>
-                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)" fill="#049BEA"></rect></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="#049BEA"></circle></svg>
-                            <div class="device-wrapper">
-                                <img src="assets/img/png-transparent-linux-ve-windows-un-karşılaştırılması-computer-servers-operating-systems-linux (1)-Photoroom.png-Photoroom.png" alt="logo-linux" width="400px">
-                               </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Quote/testimonial aside-->
-        <aside class="text-center bg-gradient-primary-to-secondary">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"A tarefa básica que um computador realiza é a execução de programas. O programa a executar consiste em um conjunto de instruções armazenadas na memória." (STALLINGS, 2018, p. 5)</div>
-                        <i class="fa-solid fa-computer" style="font-size: 65px; color:white;"></i>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!-- Basic features section-->
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/sistemaoperaionais1.jpeg" alt="image-sistemas-operacionais" width="450px"/></div>
-                    </div>
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">O que é um Sistema Operacional?</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">"É difícil dizer com absoluta precisão o que é o sistema operacional, além de ele ser o software que opera em modo núcleo [...] cuja função é fornecer aos programas do usuário um modelo do computador melhor, mais simples e mais limpo, assim como lidar com o gerenciamento de todos os recursos mencionados." (TANENBAUM, 2015, pp. 1, 3)</p>
-                    </div>
-                  
-                </div>
-            </div>
-        </section>
-        <!-- App features section-->
-        <section id="features">
-                <div class="tree">
-                    <ul>
-                        <li>
-                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover" title="Unix" data-bs-content="O Unix, desenvolvido na Bell Labs por Ken Thompson e Dennis Ritchie, surgiu como uma continuação do projeto Multics na década de 60. Com uma interface de linha de comando e sistema de arquivos hierárquico, a primeira versão foi lançada em 1971, contendo 60 comandos distintos, sendo um sistema operacional multi-tarefa e multi-usuario.">Unix</button></a> 
-                            <ul>
-                                <li>
-                                    <a href="#"><button href="#">Child</button></a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Grand Child</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Child</a>
-                                    <ul>
-                                        <li><a href="#">Grand Child</a></li>
-                                        
-                                        <li>
-                                            <a href="#">Grand Child</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Great Grand Child</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Great Grand Child</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Great Grand Child</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-           
-        </section>
-        <!-- Basic features section-->
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">POSIX</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">"Para tornar possível escrever programas que pudessem ser executados em qualquer sistema UNIX, o IEEE desenvolveu um padrão para o UNIX, chamado POSIX (Portable Operating System Interface — interface portátil para sistemas operacionais), ao qual a maioria das versões do UNIX dá suporte hoje em dia." (TANENBAUM, 2015, p. 10).</p>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">
-                            "O padrão define várias funções, como manipulação de arquivos, gerenciamento de processos e chamada do sistema APIs. POSIX incentiva a compatibilidade e operações entre plataformas em Sistemas Linux." (PhoenixNAP Global IT Services, 2022).
-                        </p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img/lupa-em-branco_1308-15364-Photoroom.png" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
-        <!-- Call to action section-->
-        <section class="cta">
-            <div class="cta-content">
-                <div class="container px-5">
-                    <h2 class="text-white display-1 lh-1 mb-4">
-                        Stop waiting.
-                        <br />
-                        Start building.
-                    </h2>
-                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
-                </div>
-            </div>
-        </section>
-    
-        
-        <footer class="bg-black text-center py-5">
-            <div class="container px-5">
-                <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
-                    <a href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">FAQ</a>
-                </div>
-            </div>
-        </footer>
-        <!-- Feedback Modal-->
-        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/scripts.js"></script>
-        
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </header>
+    <!-- Quote/testimonial aside-->
+    <aside class="text-center bg-gradient-primary-to-secondary">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xl-8">
+                    <div class="h2 fs-1 text-white mb-4">"A tarefa básica que um computador realiza é a execução de
+                        programas. O programa a executar consiste em um conjunto de instruções armazenadas na memória."
+                        (STALLINGS, 2018, p. 5)</div>
+                    <i class="fa-solid fa-computer" style="font-size: 65px; color:white;"></i>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Basic features section-->
+    <section class="bg-light" id="operatingSystem">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle"
+                            src="assets/sistemaoperaionais1.jpeg" alt="image-sistemas-operacionais" width="450px" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <h2 class="display-4 lh-1 mb-4">O que é um Sistema Operacional?</h2>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">"É difícil dizer com absoluta precisão o que é o
+                        sistema operacional, além de ele ser o software que opera em modo núcleo [...] cuja função é
+                        fornecer aos programas do usuário um modelo do computador melhor, mais simples e mais limpo,
+                        assim como lidar com o gerenciamento de todos os recursos mencionados." (TANENBAUM, 2015, pp. 1,
+                        3)</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- App features section-->
+    <section id="features">
+        <div class="container px-5">
+            <div class="tree">
+                <ul>
+                    <li>
+                        <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                title="Unix"
+                                data-bs-content="O Unix, desenvolvido na Bell Labs por Ken Thompson e Dennis Ritchie, surgiu como uma continuação do projeto Multics na década de 60. Com uma interface de linha de comando e sistema de arquivos hierárquico, a primeira versão foi lançada em 1971, contendo 60 comandos distintos, sendo um sistema operacional multi-tarefa e multi-usuario.">Unix</button></a>
+                        <ul>
+                            <li>
+                                <a href="#"><button href="#">Child</button></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Grand Child</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Child</a>
+                                <ul>
+                                    <li><a href="#">Grand Child</a></li>
+
+                                    <li>
+                                        <a href="#">Grand Child</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Great Grand Child</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Great Grand Child</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Great Grand Child</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Basic features section-->
+    <section class="bg-light" id="posix">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-12 col-lg-5">
+                    <h2 class="display-4 lh-1 mb-4">POSIX</h2>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">"Para tornar possível escrever programas que
+                        pudessem ser executados em qualquer sistema UNIX, o IEEE desenvolveu um padrão para o UNIX,
+                        chamado POSIX (Portable Operating System Interface — interface portátil para sistemas
+                        operacionais), ao qual a maioria das versões do UNIX dá suporte hoje em dia." (TANENBAUM, 2015,
+                        p. 10).</p>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+                        "O padrão define várias funções, como manipulação de arquivos, gerenciamento de processos e
+                        chamada do sistema APIs. POSIX incentiva a compatibilidade e operações entre plataformas em
+                        Sistemas Linux." (PhoenixNAP Global IT Services, 2022).
+                    </p>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0"><img class="img-fluid"
+                            src="assets/img/lupa-em-branco_1308-15364-Photoroom.png" alt="..." /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="treeSecond" class="tree-position">
+        <div class="tree">
+            <ul>
+                <li>
+                    <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                            title="MS-DOS"
+                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">MS-DOS</button></a>
+                    <ul>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="PCVMS"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">PCVMS</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="QDOS/86-DOS"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">QDOS/86-DOS</button></a>
+                            <ul>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="MSX-DOS"
+                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">MSX-DOS</button></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="Windows 1"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                    1</button></a>
+                            <ul>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="Windows 2"
+                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                            2</button></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Windows 3"
+                                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                    3</button></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="Windows 95"
+                                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                            95</button></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><button type="button"
+                                                                    class="btn btn-lg popover-button"
+                                                                    data-toggle="popover" title="Windows 98"
+                                                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                    98</button></a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#"><button type="button"
+                                                                            class="btn btn-lg popover-button"
+                                                                            data-toggle="popover" title="Windows ME"
+                                                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                            ME</button></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="DCP"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">DCP</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="PCUNIX/PCNX"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">PCUNIX/PCNXs</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="Z-DOS"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Z-DOS</button></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-line">
+        </div>
+        <div class="tree">
+            <ul>
+                <li>
+                    <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                            title="OS/2"
+                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">OS/2</button></a>
+                    <ul>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="eComStation"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">eComStation</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="ArcaOS"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">ArcaOS</button></a>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="Windows NT 3.x"
+                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                    NT 3.x</button></a>
+                            <ul>
+                                <li>
+
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="Windows 8"
+                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                            Windows Phone 8</button></a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                        data-toggle="popover" title="Windows
+                                        Server"
+                                        data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                    Server</button></a>
+                                </li>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="Windows NT 4"
+                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                            NT 4</button></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Windows 2000"
+                                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                    2000</button></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="Windows XP"
+                                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                            XP</button></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><button type="button"
+                                                                    class="btn btn-lg popover-button"
+                                                                    data-toggle="popover" title="Windows Vista"
+                                                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                    Vista</button></a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#"><button type="button"
+                                                                            class="btn btn-lg popover-button"
+                                                                            data-toggle="popover" title="Windows 7"
+                                                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                            7</button></a>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#"><button type="button"
+                                                                                    class="btn btn-lg popover-button"
+                                                                                    data-toggle="popover"
+                                                                                    title="Windows 8"
+                                                                                    data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                                    8</button></a>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="#"><button type="button"
+                                                                                            class="btn btn-lg popover-button"
+                                                                                            data-toggle="popover"
+                                                                                            title="Windows 10"
+                                                                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                                                                            10</button></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to action section-->
+    <section class="cta" id="win95">
+        <div class="cta-content">
+            <div class="container px-5">
+                <h2 class="text-white display-1 lh-1 mb-4">
+                    Windows 95:
+                    <br>
+                    Revolução dos PCs
+                </h2>
+                <p class="py-3 px-4 rounded-pill p-format" style="width: 50%;">"O sistema operacional da Microsoft foi
+                    lançado em 24 de agosto, há exatos 25 anos, com funcionalidades que resistem até hoje em grande
+                    parte dos PCs." (Wakka, 2020).</p>
+                <p class="p-format" style="width: 70%;">
+                    Com sua interface gráfica amigável, o Windows 95 popularizou o uso do mouse e introduziu recursos
+                    icônicos como o Menu Iniciar e a barra de tarefas. Essas funcionalidades resistem até hoje e
+                    influenciaram gerações de sistemas operacionais subsequentes
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-black text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
+                <a href="#!">Privacy</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">Terms</a>
+                <span class="mx-1">&middot;</span>
+                <a href="#!">FAQ</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Feedback Modal-->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-4">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
+                                id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
 </html>

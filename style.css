@@ -196,12 +196,25 @@ right connector from last child*/
 .tree li a:hover+ul li::before, 
 .tree li a:hover+ul::before, 
 .tree li a:hover+ul ul::before{
-	border-color:  black;
+	border-color:  #004d76;
 }
 
 .popover.popover-body {
     background-color: #f8f9fa; /* Cor de fundo */
     color: rgb(231, 7, 160); /* Cor do texto */
+}
+
+.tree-position {
+    display: flex;
+    justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bottom-line {
+	width: 100%;
+	border-bottom: 1px solid #9f1ae2;
+	padding-top: 16px;
 }
 
 /*Thats all. I hope you enjoyed it.
