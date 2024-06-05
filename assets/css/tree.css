@@ -213,19 +213,11 @@ right connector from last child*/
 
 .bottom-line {
 	width: 100%;
-	border-bottom: 1px solid #9f1ae2;
-	padding-top: 16px;
+	height: 20px;
+	margin-top: 20px;
+	background: linear-gradient(45deg, #1CD8B3, #049BEA);
 }
 
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
-
-
-/*Thats all. I hope you enjoyed it.
-Thanks :)*/
-
-/*.popover-button{
-	background:linear-gradient(45deg, #2937f0, #9f1ae2) !important;
-	border: none; 
-	color: #FFFFFF !important;
-}*/
+#treeSecond h5{
+	font-size: 20px;
+}
