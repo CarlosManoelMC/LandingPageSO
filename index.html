@@ -18,7 +18,8 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
         rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/tree.css" rel="stylesheet" />
 </head>
 
@@ -36,7 +37,7 @@
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#operatingSystem">Sistemas Operacionais</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Árvores</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Linux</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#posix">Posix</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#treeSecond">Windows</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#win95">Windows 95</a></li>
@@ -45,12 +46,12 @@
             </div>
         </div>
     </nav>
-   
+
     <header class="masthead">
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
-                   
+
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
                         <h1 class="display-1 lh-1 mb-3">Hierarquia dos Sistemas Operacionais</h1>
                         <p class="lead fw-normal text-muted mb-5">Descubra a história por trás do código: explorando a
@@ -58,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                  
+
                     <div class="masthead-device-mockup">
                         <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
                             style="z-index: 1;">
@@ -88,7 +89,7 @@
             </div>
         </div>
     </header>
-   
+
     <aside class="text-center bg-gradient-primary-to-secondary">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
@@ -101,7 +102,7 @@
             </div>
         </div>
     </aside>
-  
+
     <section class="bg-light" id="operatingSystem">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -122,53 +123,164 @@
             </div>
         </div>
     </section>
-    
-    <section id="features">
-        <div class="container px-5">
-            <div class="tree">
-                <ul>
-                    <li>
-                        <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
-                                title="Unix"
-                                data-bs-content="O Unix, desenvolvido na Bell Labs por Ken Thompson e Dennis Ritchie, surgiu como uma continuação do projeto Multics na década de 60. Com uma interface de linha de comando e sistema de arquivos hierárquico, a primeira versão foi lançada em 1971, contendo 60 comandos distintos, sendo um sistema operacional multi-tarefa e multi-usuario.">Unix</button></a>
-                        <ul>
-                            <li>
-                                <a href="#"><button href="#">Child</button></a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Grand Child</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Child</a>
-                                <ul>
-                                    <li><a href="#">Grand Child</a></li>
 
-                                    <li>
-                                        <a href="#">Grand Child</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Great Grand Child</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Great Grand Child</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Great Grand Child</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+    <section id="features" class="tree-position">
+        <div class="tree">
+            <ul>
+                <li>
+                    <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                            title="Unix"
+                            data-bs-content="O Unix, desenvolvido na Bell Labs por Ken Thompson e Dennis Ritchie, surgiu como uma continuação do projeto Multics na década de 60. Com uma interface de linha de comando e sistema de arquivos hierárquico, a primeira versão foi lançada em 1971, contendo 60 comandos distintos, sendo um sistema operacional multi-tarefa e multi-usuario.">Unix</button></a>
+                    <ul>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="BSD"
+                                    data-bs-content="O BSD, sigla para Berkeley Software Distribution, é um kernel baseado no Unix, criado pela Universidade de Berkeley. Lançado em 1978 como uma expansão do Unix, teve sua segunda edição em 1979, que trouxe o editor de texto vi e o C shell. Em 1980, a DARPA financiou o BSD devido ao interesse militar.
+                                    Bill Joy, co-fundador da Sun Microsystems, lançou o BSD 4.2 em 1983, que apresentou o mascote “daemon”. Em 1991, Keith Bostic reimplementou o BSD para torná-lo independente do Unix, resultando no NET/2, base para o BSD/386 e o 386BSD. Em 1992, um processo da AT&T levou à remoção de partes do código do BSD, incentivando a criação do FreeBSD, iniciado oficialmente em 1993.">BSD</button></a>
+                            <ul>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="NeXTSTEP"
+                                            data-bs-content="Apple Inc. O NEXTSTEP foi o sistema operacional multitarefa orientado a objeto que a NeXT desenvolveu para rodar nos computadores NeXT (black boxes). O NEXTSTEP 1.0 foi lançado em 18 de Setembro de 1989, depois de várias prévias começando em 1986. A última versão, 3.3, foi lançada no início de 1995, nesse momento ele rodava não somente na família de processadores 68000 da Motorola, mas também em IBM PCs x86, Sun SPARC, e HP PA-RISC.
+                                            O NEXTSTEP deu origem ao Mac OS X, influenciando o kernel OpenDarwin e em elementos da interface, como o Dock.">NeXTSTEP
+                                        </button></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="macOS"
+                                                    data-bs-content="O Mac OS é o sistema operacional dos computadores da linha Macintosh, da Apple. O seu surgimento ocorreu em 1984, junto ao lançamento do primeiro Macintosh. Esse computador tinha 128 KB de RAM e processadores da família 68000 da Motorola. Inicialmente, o seu sistema operacional era chamado apenas de System.
+                                                    System 1.
+                                                    O System era modificado a cada versão do Macintosh com pequenas melhorias. Assim seguiu até 1988, com o System 6. Em 1991, a Apple lançou o System 7, considerado uma versão com várias mudanças. Entre elas, estão o uso de cores, multitarefa como parte integrante do sistema, introdução da linguagem Apple Script e Drag & Drop de arquivos. Outro avanço notável do sistema operacional surgiu em 1994, quando a Apple começou a adotar o uso de processadores PowerPC da IBM, que permitiram maior processamento pelo SO e pelos programas, e também começou a permitir a criação de clones da sua arquitetura por outros fabricantes. A partir da versão 7.6, o nome Mac OS começou a ser adotado.
+                                                    O Mac OS é conhecido por ser o sistema operacional a popularizar o uso da interface gráfica. Na fase inicial, após o lançamento dessa forma de interagir com a máquina, esse tipo de sistema teve pouca aceitação por desenvolvedores, que estavam acostumados com o uso de terminais de linha de comando para executar seus programas. Após a popularização da interface gráfica e o surgimento de bibliotecas com mais possibilidades de criação e recursos mais poderosos, o uso da interface gráfica tornou-se o caminho principal de desenvolvimento de programas para computadores pessoais.">macOS
+                                                </button></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="IOS"
+                                                            data-bs-content="O iOS foi lançado originalmente em 2007 com o primeiro iPhone, e no mês seguinte chegaria com o novo iPod Touch. Curioso que até a versão 4.0 ele chamar-se-ia iPhone OS para contrastar com o Mac OS). Em 2010 passaria também a ser o sistema embarcado nos iPads.
+                                                            Se você se lembra da história sendo escrita em 2007 vai recordar dos principais motivos que levaram o iOS e o iPhone a fazerem tanto sucesso: toque na tela e exclusão do teclado (um erro segundo Steve Balmer, executivo da Microsoft. Veja o vídeo abaixo) que deu lugar a uma tela maior e totalmente sensível a gestos e comandos de toque e à possibilidade de instalar os famosos aplicativos, baixados em sua loja. A título de curiosidade: Hoje a App Store tem mais de 2 milhões deles - 740 mil exclusivos para iPads - que, juntos, já foram baixados mais de 130 bilhões de vezes!!
+                                                            Desde então o sistema já foi adaptado e para o Apple Watch e para o Apple TV (até a 3ª geração, pois depois o sistema ganhou seu próprio OS, o tvOS). sistema de filmes, séries, e demais formas de entretenimento televisivo da marca. O sistema operacional é atualizado com 1 versão anual e diversas pequenas versões contendo correções e resolução de bugs.
+                                                            A Apple encoraja fortemente que todos atualizem seus aparelhos para a última versão, limitando recursos, inclusive, de quem não o faz. E o pessoal tem seguido à risca essa orientação. Abaixo o gráfico das versões utilizadas pelos usuários em final de novembro de 2016.">IOS
+                                                        </button></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><button type="button" class="btn btn-lg popover-button" data-toggle="popover"
+                                    title="Minix"
+                                    data-bs-content="O Minix é um sistema operacional derivado da família UNIX, com código de fonte aberta, feito exclusivamente para fins educativos, desenvolvido em 1987 por Andrew S. Tanenbaum. Neste sistema operacional, o gerenciamento de memória é diferente dos demais SOs, uma vez que ele não se utiliza de paginação ou swapping. Além do fato que, o gerenciamento de memória é mesclado com o gerenciamento de processos.
+                                        Utiliza-se de um sistema de lacunas, onde quando ocorrem chamadas de sistema fork ou exec, a lista é percorrida até que seja encontrado uma primeira lacuna que couber e que seja suficientemente grande, também conhecida como first-fit.
+                                        Não ocorrer a paginação e nem o swapping é bem incomum, no entanto, tem certas explicações para tal decisão, como: sistema simples e fácil compreensão, facilidade em portar o sistema Minix 3 para qualquer outro hardware e também porque foi projetada para uma IBM PC que nem continha uma MMU (Memory Manager Unit), impossibilitando de vez a paginação. Levando o Minix a ser usado em unidades de sistemas embarcados, como DVD Players, câmeras digitais e equipamentos de som e etc..">Minix</button></a>
+                            <ul>
+                                <li>
+                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                            data-toggle="popover" title="Linux" data-bs-content="A história do Linux começa no ano de 1991, pelas mãos de um estudante universitário finlandês chamado Linus Torvalds. O Linux foi criado por ele, não totalmente do “zero”, mas sim como uma variação do Minix. O Minix é um sistema operacional simples, criado por Andrew S. Tanenbaum, um renomado professor de computação que é conhecido pelos diversos livros que escreveu para a área.
+                                            Tanenbaum disponibilizou o Minix principalmente para servir de auxílio no ensino de computação. Trata-se de um sistema operacional simples, que exige poucos recursos de hardware e cuja primeira versão foi lançada em 1987. Linus Torvalds, então com quase 20 anos, começou a estudar ciência da computação na Universidade de Helsinki, na Finlândia, em 1988. Cerca de dois anos depois, aproveitando o conhecimento que tinha e estava adquirindo sobre a linguagem C, decidiu criar a sua própria lementação de um terminal em seu recém obtido computador 80386, principalmente para acessar o servidor Unix da instituição de ensino. Isso porque ele já havia testado o Minix para essa finalidade, mas não estava satisfeito com os seus recursos.
+                                            ">Linux</button></a>
 
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Android"
+                                                    data-bs-content="O Android foi lançado em 2008, mas sua história começou bem antes, em outubro de 2003. Nesse ano, Rich Miner, Nick Sears, Chris White e Andy Rubin criaram a empresa Android Inc. em Palo Alto, na Califórnia.
+                                                    No início, o objetivo do grupo era de que o Android fosse um sistema operacional para câmeras digitais. No entanto, reuniões com investidores mostraram que esse nicho não tinha potencial, fazendo com que a empresa mudasse o seu foco para os celulares.
+                                                    Não demorou muito e em 2005 o Google comprou a Android Inc. por meros US$ 50 milhões. Com muitos planos e mudanças ao longo do caminho (inclusive o lançamento do iPhone em 2007), o primeiro aparelho com a primeira versão do Android a chegar no mercado foi o HTC Dream, anunciado em 23 de setembro de 2008.">Android</button></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Slackware"
+                                                    data-bs-content="O Slackware foi lançado pela primeira vez em 1993 por Patrick Volkerding. Foi uma das primeiras distribuições Linux disponíveis publicamente e desempenhou um papel fundamental na popularização do sistema operacional Linux. O  Slackware é baseado nos princípios do Unix tradicional e busca fornecer uma experiência de uso semelhante. Ao longo dos anos, o  Slackware manteve-se fiel à sua filosofia de simplicidade e estabilidade, tornando-se uma opção popular para usuários experientes e entusiastas do Linux.">Slackware
+                                                </button></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Debian"
+                                                    data-bs-content="O Debian foi criado em agosto de 1993 por Ian Murdock, como uma nova distribuição que seria feita abertamente, no espírito do Linux e do projeto GNU. O Debian foi concebido para ser cuidadosamente e conscientemente organizado, e para ser mantido e suportado com cuidado similar. Tudo começou como um pequeno grupo de hackers de Software Livre que, gradativamente, cresceu e tornou-se uma grande e organizada comunidade de desenvolvedores(as) e usuários(as).">Debian
+                                                </button></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="Unbutu"
+                                                            data-bs-content="Em 2004, Mark Shuttleworth, CEO da Canonical, uniu um time de desenvolvedores do Debian na intenção de criar uma distribuição Linux de fácil utilização para usuários comuns, eliminando diversas dificuldades que existiam na distro popular.Desta forma, em outubro de 2004, nasceu a primeira versão do Ubuntu, de codinome Warty Warthog.A primeira versão possuía a numeração 4.10, já que a organização das versões é baseada em mês e ano, e não em numerações seguidas.                                                 Já o codinome, é sempre baseado em um adjetivo seguido do nome de um animal, geralmente africano, ambos iniciados com a mesma letra e obedecendo à ordem do alfabeto.">Unbutu
+                                                        </button></a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"><button type="button"
+                                                                    class="btn btn-lg popover-button"
+                                                                    data-toggle="popover" title="Linux
+                                                                Mint" data-bs-content="O Linux Mint é um sistema operacional muito moderno. Seu desenvolvimento começou
+                                                                    em 2006. No entanto, ele é construído sobre uma base de software muito testada e
+                                                                    madura, incluindo o kernel Linux, as ferramentas GNU e o desktop MATE. Ele também
+                                                                    conta com os projetos Ubuntu e Debian e usa seus sistemas como base.
+                                                                    O projeto Linux Mint tem como foco tornar o ambiente de trabalho mais útil e mais
+                                                                    eficiente para as tarefas diárias realizadas pelos usuários comuns. Este sistema
+                                                                    operacional livre também fornece uma enorme coleção de software disponível, além de
+                                                                    um conjunto muito bem integrado de serviços.
+                                                                    A distro obteve um rápido crescimento de popularidade desde o seu lançamento, com
+                                                                    mais e mais pessoas passando a usá-la todos os dias.
+                                                                    ">Linux
+                                                                    Mint </button></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><button type="button"
+                                                                    class="btn btn-lg popover-button"
+                                                                    data-toggle="popover" title="Pop!_OS"
+                                                                    data-bs-content="História e Origens
+                                                                    O Pop!_OS foi lançado pela System76 em 2017 como uma alternativa ao sistema operacional Ubuntu padrão. Embora seja baseado no Ubuntu, o  Pop!_OS é personalizado com recursos e otimizações adicionais para atender às necessidades dos usuários. A System76 se concentra em fornecer uma experiência perfeita em seus próprios computadores, mas o  Pop!_OS também pode ser instalado em outros dispositivos compatíveis.">Pop!_OS
+                                                                </button></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="Kali
+                                                        Linux"
+                                                            data-bs-content="O Kali Linux teve sua origem no projeto BackTrack, uma distribuição Linux focada em segurança que foi descontinuada em 2013. A equipe por trás do BackTrack decidiu criar uma nova distribuição, mais avançada e poderosa, e assim nasceu o Kali Linux.
+                                                            O nome “Kali” é uma referência à deusa hindu Kali, conhecida por sua natureza feroz e destrutiva. Essa escolha de nome reflete a proposta do Kali Linux de ser uma ferramenta poderosa para testes de penetração e auditoria de segurança. ">Kali
+                                                            Linux </button></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                    data-toggle="popover" title="Red
+                                                Hat "
+                                                    data-bs-content="A Red Hat® Inc. começou quando um pequeno empresário e um geek se conheceram em uma conferência de tecnologia. Esse geek era Marc Ewing, que na época hackeava, depurava e executava sua própria distribuição Linux® em CDs na cidade onde morava, em Raleigh, Carolina do Norte, EUA. 
+                                                    Bob Young era o empresário: ele conduzia um empreendimento de catálogos de suprimentos de informática no seu estado natal em Connecticut, EUA. Ele percebeu um interesse cada vez maior das pessoas pelo Linux, então começou a comprar os CDs de Ewing. Young vendeu tantos CDs que ele e Ewing uniram forças e, em 1995, a Red Hat Software nasceu, com Young como CEO.                                                    
+                                                    O nome Red Hat veio da experiência de Ewing no laboratório de informática da faculdade. Ele usava um boné vermelho do time de lacrosse da faculdade Cornell, que pertencia ao seu avô, e as pessoas diziam: “Se precisar de ajuda, procure o cara do boné vermelho”.">Red
+                                                    Hat </button></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="Fedora"
+                                                            data-bs-content="O Fedora tem sua origem na distribuição Linux Red Hat Linux, que foi descontinuada em 2003. Após o fim do Red Hat Linux, a Red Hat decidiu criar uma nova distribuição que servisse como uma plataforma de desenvolvimento para a distribuição comercial Red Hat Enterprise Linux (RHEL). Assim, em 2003, nasceu o Fedora.
+                                                            Desde então, o Fedora tem sido lançado regularmente, com novas versões disponibilizadas aproximadamente a cada seis meses. Cada versão do Fedora é nomeada com um codinome específico, como Fedora 33 “Bighorn” e Fedora 34 “Locus”.">Fedora
+                                                        </button></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><button type="button" class="btn btn-lg popover-button"
+                                                            data-toggle="popover" title="CentOS" data-bs-content="Desde março de 2004, o CentOS Linux é uma distribuição apoiada pela comunidade derivada de fontes gratuitas fornecidas ao público pela Red Hat. Ele é sem custo e pode ser distribuído livremente. O CentOS Linux é um sistema operacional de nível empresarial, que é baseado no código-fonte do Red Hat Enterprise Linux (RHEL). Ele era desenvolvido por um pequeno, mas crescente time de desenvolvedores chave. Esses desenvolvedores são apoiados por uma ativa comunidade de usuários, incluindo administradores de sistema, administradores de rede, gerentes, colaboradores principais do Linux e entusiastas do Linux de todo o mundo.">CentOS
+                                                        </button></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </section>
-  
+    <!-- Basic features section-->
     <section class="bg-light" id="posix">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -321,10 +433,10 @@
                                 </li>
                                 <li>
                                     <a href="#"><button type="button" class="btn btn-lg popover-button"
-                                        data-toggle="popover" title="Windows
+                                            data-toggle="popover" title="Windows
                                         Server"
-                                        data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
-                                    Server</button></a>
+                                            data-bs-content="MS-DOS, acrônimo de Microsoft Disk Operating System, é um sistema operacional comprado pela Microsoft para ser usado na linha de computadores IBM PC.  É um sistema mono-usuário e com  memória real, isto é só pode ser usado por um usuário de cada vez e só podem ser executados programas que caibam na memória. Quando o computador é ligado, após serem executadas as instruções contidas na memória ROM, começa a procura pelo Sistema Operacional. As operações a serem realizadas são informadas por instruções através de comandos.">Windows
+                                            Server</button></a>
                                 </li>
                                 <li>
                                     <a href="#"><button type="button" class="btn btn-lg popover-button"
@@ -376,6 +488,7 @@
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
+
                                                                     </ul>
                                                                 </li>
                                                             </ul>
@@ -386,13 +499,17 @@
                                         </li>
                                     </ul>
                                 </li>
+
                             </ul>
                         </li>
                     </ul>
+
                 </li>
             </ul>
         </div>
     </section>
+
+    <!-- Call to action section-->
     <section class="cta" id="win95">
         <div class="cta-content">
             <div class="container px-5">
@@ -426,15 +543,97 @@
             </div>
         </div>
     </footer>
-    
-   
-    
+    <!-- Feedback Modal-->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 p-4">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
+                                id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
